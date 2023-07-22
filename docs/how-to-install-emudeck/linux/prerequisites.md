@@ -1,13 +1,27 @@
 # EmuDeck for Linux Prerequisites
 
-## Ubuntu/Debian
+> These are for x86_64 devices **ONLY**
 
-sudo apt-get install steam jq zenity flatpak unzip bash
+## Debian based (Includes Ubuntu, Pop!_OS, Mint, etc.)
 
-## Arch
+sudo apt-get install jq zenity flatpak unzip bash libfuse2 git rsync
 
-sudo pacman -Sy packagekit-qt5 flatpak rsync unzip jq bash curl
+Install Steam as directed by your OS.
 
-## Fedora
+## Arch based (Includes Endeavour, Manjaro, etc.)
 
-dnf install flatpak unzip jq bash steam
+sudo pacman -Sy steam jq zenity flatpak unzip bash fuse2 git
+
+## Fedora based (Includes RHEL, CentOS, Nobara, etc.)
+
+sudo dnf install jq zenity flatpak unzip bash fuse git rsync
+
+Install Steam as directed by your OS.
+
+## OpenSUSE based
+
+sudo zypper install steam jq zenity flatpak unzip bash libfuse2 git rsync
+
+## Void based
+
+sudo xbps-install -S steam jq zenity flatpak unzip bash fuse git rsync
